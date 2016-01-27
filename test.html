@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Welcome to Core Javascript Practice!</h1>
+</body>
+<script>
+  /*  for (var i=0;i<100;i++){
+        setTimeout(function(i){
+            console.log(i)
+        }.bind(null,i),100*i);
+    }*/
+
+  /*  function Person(name,age){
+        this.name=name;
+        this.age=age;
+    }
+
+    Person.prototype.toString = function personToString(){
+        return this.name+":"+this.age;
+    }
+
+    var person=new Person("manali",30);
+    console.log(person.toString());*/
+
+ /*   function sum(a,b){
+        return a+b;
+    }
+    console.log("Sum="+sum.call(undefined,2,3));
+    console.log("Sum="+sum.apply(undefined,[2,3]));
+    var r=sum.bind(this,5,2);
+    console.log(r());
+*/
+
+  //code to check if property is inherited or not
+/*    var o={name:'Robert',type:'philosopher'}
+    var socrates=Object.create(o);*/
+ //   console.log(o.isPrototypeOf(socrates));
+ //   if("type" in socrates && !socrates.hasOwnProperty('type')){console.log("type is inherited!")};
+
+/*  var val=(function(){
+      var counter=0;
+   //   console.log("hi...");
+      return function(){return counter++;};
+})();*/
+
+  //  console.log(val());
+
+  //  var no=90;
+  //  console.log(no.toString(16))
+  //  console.log(no.valueOf());
+
+ //   console.log(String.fromCharCode(101))
+ //   console.log(String.fromCodePoint(0x404))
+    var quote="I love nature";
+  //  console.log(quote.charAt(0),quote.charCodeAt(0),quote.codePointAt(0));
+ //   console.log(quote.concat(" and animals."));
+ //   console.log(quote.endsWith('nature'));
+  //    console.log(quote.includes("love"));
+  //  console.log(quote.indexOf('love',6));
+ //   console.log(quote.lastIndexOf('t',12))
+ //   console.log(quote.repeat(2));
+ //   console.log(quote.slice(2,-3));
+ //   console.log(quote.split(" "));
+  //  console.log(quote.startsWith("I"));
+
+      var str="abcdefgh";
+ //   console.log(str.substr(-4,4));
+ //   console.log(str.substring(1,3));
+ //   console.log('APPLE'.toLowerCase());
+
+      var x=new String('Hello World!');
+ //   console.log(x.toString());
+
+        console.log("     fds  ".trim());
+
+</script>
+</html>
