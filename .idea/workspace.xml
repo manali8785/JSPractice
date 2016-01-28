@@ -24,8 +24,8 @@
       <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7457627">
-              <caret line="100" column="37" selection-start-line="100" selection-start-column="37" selection-end-line="100" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.66101694">
+              <caret line="104" column="2" selection-start-line="104" selection-start-column="2" selection-end-line="104" selection-end-column="2" />
               <folding>
                 <element signature="e#172#298#0" expanded="false" />
                 <element signature="e#302#568#0" expanded="false" />
@@ -181,7 +181,7 @@
     <frame x="0" y="23" width="1280" height="724" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22081016" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -209,8 +209,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7457627">
-          <caret line="100" column="37" selection-start-line="100" selection-start-column="37" selection-end-line="100" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.66101694">
+          <caret line="104" column="2" selection-start-line="104" selection-start-column="2" selection-end-line="104" selection-end-column="2" />
           <folding>
             <element signature="e#172#298#0" expanded="false" />
             <element signature="e#302#568#0" expanded="false" />
