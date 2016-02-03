@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM scripting practice</title>
+    <style>
+        .sec{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+<section id="sectionid" name="sectionname" class="sec">Welcome to section</section>
+<p>P element</p>
+</body>
+<script>
+    var sectionid=document.getElementById("sectionid");
+ //   console.log(sectionid);
+    var sectionname=document.getElementsByName("sectionname")
+ //   console.log(sectionname);
+    var sectiontype=document.getElementsByTagName("section");
+ //   console.log(sectiontype);
+    var sectionclass=document.getElementsByClassName("sec");
+ //   console.log(sectionclass);
+ //   console.log(document.all[0]);
+//  console.log(document.body.attributes[1])
+//    console.log(sectionid.childNodes.length);
+    console.log(document.getElementById("sectionid").textContent)
+    var span=document.createElement("span");
+    document.getElementById("sectionid").textContent="manali";
+
+
+</script>
+</html>

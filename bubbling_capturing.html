@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bubbling and Capturing</title>
+    <style>
+        #div1{
+            height:100px;
+            width:100px;
+            border: solid 1px blue;
+
+        }
+        #div2{
+            height:200px;
+            width:200px;
+            border: solid 1px red;
+
+        }
+        #div3{
+            height:300px;
+            width:300px;
+            border: solid 1px green;
+
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="div3">
+    <div id="div2">
+        <div id="div1">
+            <button>Click me!</button>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+        console.log("dom content loaded..");
+        document.querySelector('button').addEventListener("click",eventHandler,true);
+        document.querySelector('#div1').addEventListener("click",eventHandler,true);
+        document.querySelector('#div2').addEventListener("click",eventHandler,true);
+        document.querySelector('#div3').addEventListener("click",eventHandler,true);
+    });
+
+function eventHandler(event){
+    console.log(event.target,event.currentTarget);
+  /*  if(event.currentTarget.id==='div2'){
+        console.log('stopping propagtion');
+        event.stopPropagation();
+    }*/
+}
+
+</script>
+</html>
