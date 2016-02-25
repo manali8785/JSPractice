@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery.js"></script>
+</head>
+<script>
+    $(function(){
+        console.log("Dom loaded");
+        var user = {
+            name: "manali",
+            getName: function(){
+                return this.name;
+            }
+        };
+        var nm=user.getName.bind(user);
+    //    console.log(nm());
+    //    console.log(user.getName());
+
+/* ------------------------------------------------------------ */
+        var div=document.createElement('div');
+        div.style.cssText="background-color:light grey;";
+        div.innerHTML="Hello Manali";
+        document.body.appendChild(div);
+
+/* ------------------------------------------------------------ */
+        var myobject ={ // array-like collection
+            length: 4,
+            '0': 'zero',
+            '1': 'one',
+            '2': 'two',
+            '3': 'three'
+        }
+
+        console.log(Array.isArray(myobject))
+        var arr=Array.prototype.slice.call(myobject);
+        console.log(arr.toLocaleString())
+
+/* ------------------------------------------------------------ */
+        var text='{"user":['+
+                '{"name":"manali","age":30},'+
+                '{"name":"nisha","age":25},'+
+                '{"name":"pooja","age":34}'+
+                ']}';
+
+        var jsonobj=JSON.parse(text)
+        console.log(jsonobj);
+
+        JSON.stringify(jsonobj);
+    })
+/* ------------------------------------------------------------ */
+
+</script>
+<body>
+<h1>Core javascript Practice</h1>
+<h2><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects">Core JS MDN</a></h2>
+<ul>
+    <li><b>Function.prototype.bind()</b>- We use the Bind () method primarily to call a function with the this value set explicitly. It other words, bind () allows us to easily set which specific object will be bound to this when a function or method is invoked</li>
+    <li><b>Array.prototype.slice.call()</b> <a href="http://www.javascriptkit.com/javatutors/arrayprototypeslice.shtml">reference</a></li>
+    <li><b>Array-like objects</b> -In JavaScript, there are arrays, then there are array-like objects.
+        The later is any object with a "length" property that returns the number of elements inside the object,
+        plus numeric indices giving access to elements inside it. Examples of this include the arguments array of a function,
+        HTMLCollection collections, and custom objects with a length property and numeric indices.
+        The following are all array-like objects in JavaScript:
+        <strong>Example:</strong>
+        var myobject ={ // array-like collection
+        length: 4,
+        '0': 'zero',
+        '1': 'one',
+        '2': 'two',
+        '3': 'three'
+        }
+    </li>
+    <li>The JavaScript function <strong>JSON.parse(text)</strong> can be used to convert a JSON text into a JavaScript object:
+        Example:var obj = JSON.parse(text);
+    </li>
+    <li><strong>JSON.stringify(value [, replacer] [, space])</strong>
+        Converts a JavaScript value to a JavaScript Object Notation (JSON) string.
+    <li>
+</ul>
+</body>
+</html>
